@@ -1,0 +1,4 @@
+- Imported dataset from Kaggle for Customer Churn Prediction.
+- Loaded and inspected dataset using pandas.
+- Handled missing values in the "Churn Reason" column.
+- Cleaned and preprocessed the data for further analysis.
