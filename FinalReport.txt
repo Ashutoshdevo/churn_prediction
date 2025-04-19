@@ -1,0 +1,83 @@
+Customer Churn Prediction - Final Report
+1. Introduction
+In this project, we aim to predict customer churn in a telecommunications company based on customer data. Churn prediction is important for businesses to understand why customers leave and to take preventive actions to retain them.
+
+Problem Statement:
+The primary objective of this project is to predict whether a customer will churn (leave the company) or not, based on various features such as customer demographics, service usage, and contract details.
+
+2. Data Preprocessing
+The dataset contains various features related to customer information, such as demographic details, service usage, and customer behavior.
+
+Data Cleaning:
+Missing values: Missing data in columns like Total Charges was handled by converting the column to numeric values and filling missing entries with the mean.
+
+Categorical Features: Categorical features like Gender, Partner, Dependents, and Churn Reason were encoded using Label Encoding. This converts non-numeric values into numeric representations for machine learning models.
+
+Scaling: Numerical features were scaled using StandardScaler to ensure that all features have the same scale and help improve the performance of the models.
+
+3. Model Building
+Two machine learning models were used to predict customer churn:
+
+Logistic Regression:
+Logistic Regression is a statistical model that predicts the probability of a binary outcome (churn or not churn).
+
+The model was trained using the features in the dataset, and the accuracy of the model was evaluated using a test set.
+
+Accuracy of the Logistic Regression model: 100%.
+
+Random Forest:
+Random Forest is an ensemble learning method that uses multiple decision trees to make predictions.
+
+The model was trained with hyperparameter tuning using GridSearchCV to find the optimal hyperparameters.
+
+Best Parameters found:
+
+max_depth: 10
+
+min_samples_split: 2
+
+n_estimators: 100
+
+Accuracy of the Random Forest model: 100%.
+
+4. Model Evaluation
+Confusion Matrix:
+The confusion matrix was used to evaluate the performance of both models. Both models achieved a perfect classification with no false positives or false negatives.
+
+Logistic Regression:
+
+Accuracy: 100%
+
+Precision: 100%
+
+Recall: 100%
+
+F1-Score: 100%
+
+Random Forest:
+
+Accuracy: 100%
+
+Precision: 100%
+
+Recall: 100%
+
+F1-Score: 100%
+
+5. Conclusion
+Both Logistic Regression and Random Forest models performed exceptionally well, achieving an accuracy of 100%. This indicates that the models were able to perfectly classify the churn and non-churn customers based on the given features.
+
+Further Improvements:
+Advanced Models: Trying more advanced models like Support Vector Machines or Gradient Boosting could improve predictions further.
+
+Feature Engineering: Additional features or new data sources could be used to enhance model performance.
+
+Deep Learning: Implementing neural networks for churn prediction could be explored as a future step.
+
+The project successfully demonstrates the use of machine learning algorithms for customer churn prediction and highlights the importance of accurate predictions for business decision-making.
+
+6. References
+Scikit-learn Documentation
+
+Pandas Documentation
+
